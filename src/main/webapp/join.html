@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 작성자 : 임채은   -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>NC Dinos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <ul>
+      <li><img></li>
+      <li>
+        <div>
+        <img src="assets/images/img-embelm-128@2x.png" class="image">
+        </div>
+        <h3>회원가입</h3>
+        <p>티켓예매, 포인트 등 다양한 혜택을 누리세요.</p>
+      </li>
+    </ul>
+    <div class="content">
+    <!-- * action에 서버의 주소를 설정합니다. *
+    	 * method 속성은 get은 조회, post는 저장(수정) *
+    -->
+      <form action="welcome.jsp" method="post">
+      <ul>
+          
+      <li>아이디(필수)</li>
+        <li>
+        <input type="text" name = "id" placeholder="아이디를 입력해 주세요.">
+        </li>
+
+      <li>비밀번호(필수)</li>
+        <li>
+        <input type="password" name = "password" placeholder="비밀번호를 입력해 주세요.">
+        </li>
+
+      <li>비밀번호 확인</li>
+        <li>
+        <input type="password" name = "password" placeholder="비밀번호를 다시 한번 입력해 주세요.">
+        </li>
+
+      <li>이름(필수)</li>
+      <li>
+      <input type="text" name = "name" placeholder="이름">
+      </li>
+
+      <li>생년월일(필수)</li>
+      <li>
+      <input type="number" name = "birth" placeholder="년도4자리-월2라지-일2자리">
+      </li>
+
+      <li>성별(필수)</li>
+      <p class = "gender">
+        <input type="radio" name="gender" id="male" class ="check">
+        <label for="male">남자</label>
+        <input type="radio" name="gender" id="female" class = "check">
+        <label for="female">여자</label>
+      </p>
+      
+
+      <li>전화번호(필수)</li>
+      <li>
+        <input type="number" name = "phonenumber" placeholder="연락처">
+      </li>
+
+      <li>이메일</li>
+      <li>
+        <input type="email" name = "email" placeholder="이메일을 입력해 주세요.">
+      </li>
+
+      <li class>주소</li>
+      <li>
+      <input type="number" name = "address" placeholder="우편번호" class="address">
+      <input type="text" name = "address" placeholder="주소" class="address">
+      <input type="text" name = "address" placeholder="주소 검색 후 상세주소를 입력해 주세요"
+                      class = "address">
+      </li>
+
+      <li>선호팀</li>
+      <form action="#" class = "choose">
+        <label for="lang"></label>
+        <select name="choose" id="lang">
+        <option selected>선택하세요.</option>
+        <option value="NC">NC 다이노스</option>
+        <option value="LG">LG 트윈스</option>
+        <option value="SSG">SSG 랜더스</option>
+        <option value="KIA">KIA 타이거즈</option>
+        <option value="KT">KT 위즈</option>
+        <option value="SS">삼성 라이온즈</option>
+        <option value="LT">롯데 자이언츠</option>
+        <option value="HH">한화 이글스</option>
+        <option value="KH">키움 히어로즈</option>
+        <option value="DB">두산 베어스</option>
+      </select>
+      </form>
+
+
+
+        </ul>
+        <button type="button" onclick="save()" id ="join">회원가입</button>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

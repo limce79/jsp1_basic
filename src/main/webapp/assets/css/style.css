@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 작성자 : 임채은  */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 55rem;
+    margin: 2rem auto;
+}
+
+.content {
+    background-color: #eeeeee70;
+    padding: 5rem 2rem;
+
+}
+
+h3,
+p {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 5rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px;
+    font-weight: bold;
+}
+
+input{
+    width: 500px;
+    padding: 15px 10px;
+    margin: 0.3px;
+    
+}
+
+button {
+    background-color: rgb(9, 9, 67);
+    line-height: 3;
+    margin: 3%;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    width: 90%;
+}
+
+.image {
+    margin:auto;
+    display: block;
+}
+
+select {
+    width: 300px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    border-radius: 0px;
+    margin-left: 10px;
+
+}
+
+.address {
+    margin: 5px;
+}
+
+.gender {
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+}
